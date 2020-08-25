@@ -3,7 +3,7 @@ package oop0824;
 public class Test08_homework {
 	public static double sd(int[] aver) {
 	
-		double sum = 0; // aver[]의 합 변수
+		double sum = 0.0; // aver[]의 합 변수
 		
 		for(int i=0; i<aver.length; i++) {
 			sum=sum+aver[i];
