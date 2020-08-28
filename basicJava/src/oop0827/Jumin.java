@@ -80,26 +80,21 @@ public class Jumin {
 				"호랑이","토끼","용","뱀","말", "양"};
 		System.out.println("띠 : " + a[year%12] + "띠");
 		
-
+		//과제) 살아온 날수 구하기
+		GregorianCalendar today = new GregorianCalendar();
+		GregorianCalendar my = new GregorianCalendar();		
+		today.set(now.get(Calendar.YEAR), now.get(Calendar.MONTH), now.get(Calendar.DATE));
+		my.set(year, month-1, date);
+		int count = 0;
+		for(;;) {
+			if(now.equals(my)) {
+				break;
+			}else{
+				my.add(date, 1);
+				count++;
+			}
+		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}//disp() end
-	
-	
-	
-	
-	
+		System.out.println(count+"일");
+	}//disp() end	
 }//class end
